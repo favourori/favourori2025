@@ -11,7 +11,7 @@ export default function Home() {
                 <h1 className="display-1 regular mb-0">
                   Security Engineer building <br className="d-none d-lg-block" />
                   resilient systems at scale, turning complexity into clarity through
-                  automation that's intelligent, purposeful, and effective.
+                  automation that's intelligent, <br className="d-none d-lg-block" /> purposeful, and effective.
                 </h1>
               </div>
               <div className="flex-shrink-0 mb-5">
