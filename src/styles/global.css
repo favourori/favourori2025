@@ -20,12 +20,12 @@ body {
     height: 89px;
 }
 
+
 #header {
-    background-color: hsl(var(--background) / 0.95);
+    background-color: rgba(var(--background), 0.95);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
-    border-bottom: 1px solid hsl(var(--border));
-
+    border-bottom: 1px solid rgb(var(--border));
 }
 
 #banner .display-1 {

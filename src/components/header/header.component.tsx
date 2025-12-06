@@ -4,7 +4,7 @@ import { GuestHeaderMenu } from "@/configs";
 export function GuestHeader() {
     return (
         <header className="container-fluid border-bottom d-flex align-items-center sticky-top h-84" id="header">
-            <nav className="container px-1 px-lg-0">
+            <nav className="container container-lg px-1 px-lg-0">
                 <div className="row justify-content-between align-items-center">
                     <div className="col-auto">
                         <span className="d-block regular fs-5 lh-28">Favour <span className="regular-italic">Ori</span></span>

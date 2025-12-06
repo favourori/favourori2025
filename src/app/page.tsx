@@ -1,10 +1,11 @@
-import { Image, SectionTitle } from "@/components";
+import { FeaturedWork, Image, SectionTitle } from "@/components";
+import { featuredWorks } from "@/configs";
 
 export default function Home() {
   return (
     <>
       <div id="banner" className="container-fluid py-5 h-100">
-        <div className="container px-1 px-lg-0 h-100">
+        <div className="container container-lg px-1 px-lg-0 h-100">
           <div className="row align-items-center align-items-center h-100">
             <div className="col-lg-9">
               <div className="d-flex flex-column gap-5 mb-4">
@@ -42,7 +43,24 @@ export default function Home() {
 
       <SectionTitle title="Featured Work" />
 
-      <SectionTitle title="Contact" />
+      <div className="container-fluid pb-5">
+        <div className="container">
+          <div className="row justify-content-center gy-5">
+            <div className="col-lg-10">
+              <div className="list-group list-group-flush">
+                {featuredWorks.map((f, i) => (
+                  <div key={i} className="list-group-item bg-transparent p-0">
+                    <FeaturedWork {...f} />
+                  </div>
+                ))}
+                <div className="list-group-item bg-transparent p-0 py-5">
+                  <button type="button" className="btn btn-outline-secondary w-100 lh-lg py-3 fs-18 fw-medium">View My Projects</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
