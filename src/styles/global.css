@@ -16,11 +16,6 @@ body {
     height: 84px;
 }
 
-.h-89 {
-    height: 89px;
-}
-
-
 #header {
     background-color: rgba(var(--background), 0.95);
     backdrop-filter: blur(30px);

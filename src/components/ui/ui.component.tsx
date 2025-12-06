@@ -19,7 +19,7 @@ export function Breadcrumb({ page, caption }: BreadcrumbProps) {
 
 export function SectionTitle({ title }: SectionTitleProps) {
     return (
-        <div className="container-fluid border-bottom h-89">
+        <div className="container-fluid border-bottom h-84">
             <div className="container px-1 px-lg-0">
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
