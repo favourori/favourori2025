@@ -1,0 +1,32 @@
+html {
+    height: 100dvh;
+}
+
+body {
+    background-image: url('/assets/img/gradient.png');
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: 1019px;
+    background-attachment: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h-84 {
+    height: 84px;
+}
+
+
+#header {
+    background-color: hsl(var(--background) / 0.95);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border-bottom: 1px solid hsl(var(--border));
+
+}
+
+#banner .display-1 {
+    font-size: 96px;
+    line-height: 96px;
+    letter-spacing: -2.4px;
+}
