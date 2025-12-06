@@ -5,7 +5,7 @@ import { FeaturedWorkProps, SectionTitleProps } from "@/interfaces";
 export function SectionTitle({ title }: SectionTitleProps) {
     return (
         <div className="container-fluid border-bottom h-89">
-            <div className="container">
+            <div className="container px-1 px-lg-0">
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
                         <span className="text-uppercase fw-light text-muted">{title}</span>
@@ -19,7 +19,7 @@ export function SectionTitle({ title }: SectionTitleProps) {
 export function FeaturedWork({ year, company, role, description, skills }: FeaturedWorkProps) {
     return (
         <div className="py-5">
-            <div className="row justify-content-between py-3">
+            <div className="row justify-content-between g-4 py-3">
                 <div className="col-lg-7">
                     <p className="smaller text-muted">{year}</p>
                     <h2 className="regular fs-36">{company}</h2>

@@ -4,11 +4,11 @@ import { featuredWorks } from "@/configs";
 export default function Home() {
   return (
     <>
-      <div id="banner" className="container-fluid py-5 h-100">
+      <div id="banner" className="container-fluid pt-5 h-100">
         <div className="container container-lg px-1 px-lg-0 h-100">
           <div className="row align-items-center align-items-center h-100">
             <div className="col-lg-9">
-              <div className="d-flex flex-column gap-5 mb-4">
+              <div className="d-flex flex-column gap-5">
                 <div className="flex-shrink-0">
                   <h1 className="display-1 regular mb-0">
                     Security Engineer building <br className="d-none d-lg-block" />
@@ -16,8 +16,8 @@ export default function Home() {
                     automation that's intelligent, <br className="d-none d-lg-block" /> purposeful, and effective.
                   </h1>
                 </div>
-                <div className="flex-shrink-0 mb-5">
-                  <div className="d-flex flex-row align-items-center gap-3 text-muted mb-5">
+                <div className="flex-shrink-0">
+                  <div className="d-flex flex-row align-items-center gap-3 text-muted">
                     <small className="d-flex align-items-center">
                       Working out of
                       <span className="d-flex align-items-center fw-medium text-dark ms-1">
@@ -44,7 +44,7 @@ export default function Home() {
       <SectionTitle title="Featured Work" />
 
       <div className="container-fluid pb-5">
-        <div className="container">
+        <div className="container px-1 px-lg-0">
           <div className="row justify-content-center gy-5">
             <div className="col-lg-10">
               <div className="list-group list-group-flush">

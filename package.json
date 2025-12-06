@@ -9,12 +9,15 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.8",
     "next": "16.0.7",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "@types/bootstrap": "^5.2.10",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
