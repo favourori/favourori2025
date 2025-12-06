@@ -1,6 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FeaturedWorkProps, SectionTitleProps } from "@/interfaces";
+import { BreadcrumbProps, FeaturedWorkProps, SectionTitleProps } from "@/interfaces";
+
+export function Breadcrumb({ page, caption }: BreadcrumbProps) {
+    return (
+        <div className="container-fluid text-center py-5">
+            <div className="container px-1 px-lg-0 py-5">
+                <div className="row justify-content-center py-5">
+                    <div className="col-lg-10 py-lg-5">
+                        <span className="fw-medium fs-5"><i>{caption}</i></span>
+                        <h1 className="display-1 text-uppercase regular mb-0">{page}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 export function SectionTitle({ title }: SectionTitleProps) {
     return (

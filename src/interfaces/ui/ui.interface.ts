@@ -13,3 +13,8 @@ export interface FeaturedWorkProps {
     description: string;
     skills: Array<string>;
 }
+
+export interface BreadcrumbProps {
+    page: string;
+    caption: string;
+}
