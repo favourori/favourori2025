@@ -27,3 +27,10 @@ body {
     line-height: 96px;
     letter-spacing: -2.4px;
 }
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #2662d9;
+}
