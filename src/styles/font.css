@@ -35,6 +35,10 @@ a {
     font-size: 12px;
 }
 
+.smallest {
+    font-size: 10px;
+}
+
 .fs-18 {
     font-size: 18px;
 }
@@ -49,4 +53,8 @@ a {
 
 .lh-28 {
     line-height: 28px;
+}
+
+.h-783 {
+    height: 783.28px
 }

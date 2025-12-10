@@ -7,11 +7,23 @@ export interface SectionTitleProps {
 }
 
 export interface FeaturedWorkProps {
-    year: string;
     company: string;
     role: string;
+    title?: string;
     description: string;
-    skills: Array<string>;
+    skills?: Array<string>;
+    logo?: string;
+    start?: string;
+    end?: string;
+}
+
+export interface WorksProps {
+    title: string;
+    works: Array<{
+        title: string;
+        description: string;
+        year: string;
+    }>;
 }
 
 export interface BreadcrumbProps {

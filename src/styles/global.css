@@ -34,3 +34,7 @@ body {
     border-radius: 50%;
     background: #2662d9;
 }
+
+.works-list:last-child {
+    margin-bottom: 0 !important;
+}

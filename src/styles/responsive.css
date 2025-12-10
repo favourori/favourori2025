@@ -7,6 +7,10 @@
     #banner .display-1 {
         font-size: clamp(2rem, 8vw, 2.8rem);
     }
+
+    .h-783 {
+        height: 391.64px
+    }
 }
 
 @media (min-width: 1400px) {
@@ -15,7 +19,6 @@
         line-height: clamp(46px, 5vw + 1rem, 96px);
     }
 }
-
 
 @media (min-width: 1400px) {
     .container-lg {

@@ -6,12 +6,9 @@ import AOS from 'aos';
 export function BootstrapJs() {
     useEffect(() => {
         AOS.init({
-            offset: 100,
-            duration: 1000,
-            once: false,
-            mirror: true,
+            duration: 800,
             easing: "ease-in-out",
-            anchorPlacement: "top-center",
+            once: true,
         });
 
         if (typeof window !== "undefined") {
