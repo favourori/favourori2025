@@ -26,7 +26,7 @@ export default function Projects() {
             <div className="col-12">
               <GalleryImage />
             </div>
-            <div className="col-12 py-lg- 5"></div>
+            <div className="col-12 py-lg-5"></div>
           </div>
         </div>
       </div>
