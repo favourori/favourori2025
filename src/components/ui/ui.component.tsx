@@ -71,13 +71,14 @@ export function FeaturedWorkTwo({ logo, company, role, description, end, start }
                     )}
                 </div>
             </div>
-            <div className="card-footer border-0 bg-transparent px-4 pb-4 pt-2">
+            <div className="card-footer border-0 bg-transparent px-4 pb-4">
                 <div className="row g-4 justify-content-between align-items-center">
                     <div className="col-auto">
                         <p className="d-flex gap-1 align-items-center text-muted text-uppercase smallest mb-0">
                             {company && <span>{company}</span>}{" "}
                             <span className="fs-4">&middot;</span>
                             {start && <span>{start}</span>}{" "}
+                            <span>&rarr;</span>
                             {end && <span>{end}</span>}
                         </p>
                         <h6 className="regular text-dark fs-4 mb-2">{company}</h6>
