@@ -101,7 +101,7 @@ export function Works({ title, works }: WorksProps) {
                 </div>
                 <div className="col-lg-10">
                     {works.map((w, i) => (
-                        <div key={i} className="row align-items-start mb-4 works-list">
+                        <div key={i} className="row g-2 align-items-start mb-4 works-list">
 
                             <div className="col-lg-3">
                                 <p className="mb-0">{w.title}</p>
