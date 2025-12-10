@@ -8,6 +8,7 @@ import "@/styles/font.css";
 import "@/styles/global.css";
 import "@/styles/responsive.css";
 import "@/styles/theme.css";
+import "@/styles/animation.css";
 
 import "aos/dist/aos.css";
 

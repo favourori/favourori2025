@@ -1,4 +1,4 @@
-import { Breadcrumb, FeaturedWorkTwo, Works } from "@/components";
+import { Breadcrumb, FeaturedWorkTwo, GalleryImage, Works } from "@/components";
 import { featuredWorks, works } from "@/configs";
 
 export default function Projects() {
@@ -22,6 +22,11 @@ export default function Projects() {
                 <Works key={i} {...w} />
               ))}
             </div>
+            <div className="col-12 py-lg-3"></div>
+            <div className="col-12">
+              <GalleryImage />
+            </div>
+            <div className="col-12 py-5"></div>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { BreadcrumbProps, FeaturedWorkProps, SectionTitleProps, WorksProps } from "@/interfaces";
+import { galleryImages } from "@/configs";
 
 export function Breadcrumb({ page, caption }: BreadcrumbProps) {
     return (
@@ -70,7 +71,7 @@ export function FeaturedWorkTwo({ logo, company, role, description, end, start }
                     )}
                 </div>
             </div>
-            <div className="card-footer border-0 bg-transparent px-4 pb-4 pt-3">
+            <div className="card-footer border-0 bg-transparent px-4 pb-4 pt-2">
                 <div className="row g-4 justify-content-between align-items-center">
                     <div className="col-auto">
                         <p className="d-flex gap-1 align-items-center text-muted text-uppercase smallest mb-0">
@@ -114,6 +115,27 @@ export function Works({ title, works }: WorksProps) {
                                 <span>{w.year}</span>
                             </div>
 
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export function GalleryImage() {
+    return (
+        <div className="card border rounded-5 py-4 px-2">
+            <div className="card-body">
+                <div className="gallery-container">
+                    {galleryImages.map((rowImages, rowIndex) => (
+                        <div
+                            key={rowIndex}
+                            className={`scroll-row ${rowIndex % 2 === 0 ? "scroll-left" : "scroll-right"} d-flex gap-3 ${rowIndex !== 0 ? "mt-4" : ""}`}
+                        >
+                            {rowImages.map((imgSrc, index) => (
+                                <img key={index} src={imgSrc} className="gallery-img bg-light" />
+                            ))}
                         </div>
                     ))}
                 </div>

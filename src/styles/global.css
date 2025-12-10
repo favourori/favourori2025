@@ -38,3 +38,27 @@ body {
 .works-list:last-child {
     margin-bottom: 0 !important;
 }
+
+.gallery-container {
+    overflow: hidden;
+}
+
+.gallery-img {
+    height: 316.83px;
+    width: 238px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.scroll-row {
+    width: max-content;
+    display: flex;
+}
+
+.scroll-left {
+    animation: scrollLeft 22s linear infinite;
+}
+
+.scroll-right {
+    animation: scrollRight 22s linear infinite;
+}
