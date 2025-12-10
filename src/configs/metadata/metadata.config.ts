@@ -7,7 +7,7 @@ export const siteMetadata: Metadata = {
         "Security Engineer, Product Security Architect, and DevSecOps Expert. Building secure systems at scale.",
     keywords: [""],
     icons: {
-        shortcut: "/favicon.ico",
+        shortcut: "https://favourori.com/favicon.ico",
     },
     authors: [{ name: "Favour Ori" }],
     openGraph: {
@@ -32,6 +32,6 @@ export const siteMetadata: Metadata = {
         title: "Favour Ori | Senior Security Engineer",
         description:
             "Security Engineer, Product Security Architect, and DevSecOps Expert. Building secure systems at scale.",
-        images: ["/og-image.png"],
+        images: ["https://favourori.com/og-image.png"],
     },
 };
