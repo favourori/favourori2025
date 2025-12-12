@@ -11,9 +11,8 @@ export default function Home() {
               <div className="d-flex flex-column gap-5">
                 <div className="flex-shrink-0">
                   <h1 className="display-1 regular mb-0">
-                    Security Engineer building <br className="d-none d-lg-block" />
-                    resilient systems at scale, turning complexity into clarity through
-                    automation that's intelligent, <br className="d-none d-lg-block" /> purposeful, and effective.
+                    I design and build secure systems at scale, working across cloud security, application security, and intelligent automation to help complex enterprise environments stay resilient.<br className="d-none d-lg-block" />
+                     
                   </h1>
                 </div>
                 <div className="flex-shrink-0">
