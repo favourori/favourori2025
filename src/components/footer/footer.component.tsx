@@ -1,3 +1,5 @@
+"use client";
+
 import { Link } from "@/components";
 
 export function GuestFooter() {

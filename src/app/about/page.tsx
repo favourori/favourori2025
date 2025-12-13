@@ -6,7 +6,7 @@ export default function About() {
     <>
       <div className="h-84"></div>
 
-      <div className="container-fluid py-5">
+      <div className="container-fluid py-5" data-aos="fade-up">
         <div className="container px-1 px-lg-0 py-lg-5">
           <div className="row justify-content-center pt-lg-4">
             <div className="col-lg-10">
@@ -27,7 +27,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container-fluid border-top py-5">
+      <div className="container-fluid border-top py-5" data-aos="fade-up" data-aos-duration="1350">
         <div className="container px-1 px-lg-0 py-lg-5">
           <div className="row justify-content-center">
             <div className="col-lg-10">
@@ -65,7 +65,7 @@ export default function About() {
 
       <div className="container-fluid border-top py-5" style={{
         backgroundColor: "#f3f4f64d"
-      }}>
+      }} data-aos="fade-up">
         <div className="container px-1 px-lg-0 py-lg-5">
           <div className="row justify-content-center">
             <div className="col-lg-10">
@@ -88,7 +88,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container-fluid border-top py-5">
+      <div className="container-fluid border-top py-5" data-aos="fade-up">
         <div className="container px-1 px-lg-0 py-lg-5">
           <div className="row justify-content-center">
             <div className="col-lg-10">
@@ -122,7 +122,7 @@ export default function About() {
       </div>
 
 
-      <div className="container-fluid border-top">
+      <div className="container-fluid border-top" data-aos="fade-up">
         <div className="container px-1 px-lg-0 py-lg-5">
           <div className="row gy-5">
             <div className="col-12 py-lg-3 d-none d-lg-block"></div>
@@ -142,7 +142,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container-fluid border-top py-5">
+      <div className="container-fluid border-top py-5" data-aos="fade-up">
         <div className="container px-1 px-lg-0 py-lg-5">
           <div className="row justify-content-center">
             <div className="col-lg-10">
