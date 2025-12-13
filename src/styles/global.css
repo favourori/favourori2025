@@ -62,3 +62,16 @@ body {
 .scroll-right {
     animation: scrollRight 22s linear infinite;
 }
+
+.featured-work-card {
+    cursor: pointer;
+}
+
+.featured-work-card a {
+    color: var(--bs-dark);
+    transition: all .3s;
+}
+
+.featured-work-card:hover a {
+    color: var(--bs-primary);
+}

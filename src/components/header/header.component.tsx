@@ -13,7 +13,7 @@ export function GuestHeader() {
                     <div className="col-auto">
                         <div className="d-flex gap-4">
                             {GuestHeaderMenu.map((m) => (
-                                <Link key={m.name} href={m.href} className="text-muted fs-18">{m.name}</Link>
+                                <Link key={m.name} href={m.href} className="text-muted">{m.name}</Link>
                             ))}
                         </div>
                     </div>

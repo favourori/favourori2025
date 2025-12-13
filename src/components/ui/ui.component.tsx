@@ -58,7 +58,7 @@ export function FeaturedWork({ start, company, role, description, skills }: Feat
 
 export function FeaturedWorkTwo({ logo, company, role, description, end, start, problem, purpose, impact, fullInfo = false }: FeaturedWorkProps) {
     return (
-        <div className="card border rounded-5 mb-4">
+        <div className="card border rounded-5 mb-4 featured-work-card">
             <div className="card-body p-4">
                 <div className="rounded-4 bg-light p-5 h-783 d-flex align-items-center justify-content-center">
                     {logo && (
@@ -81,11 +81,15 @@ export function FeaturedWorkTwo({ logo, company, role, description, end, start, 
                             <span>&rarr;</span>
                             {end && <span>{end}</span>}
                         </p>
-                        <h6 className="regular fw-bold text-dark fs-1 mb-2">{company}</h6>
+                        <h6 className="regular fw-bold text-dark fs-1 mb-2">
+                            {fullInfo ? (company) : (<Link href="/projects">{company}</Link>)}
+                        </h6>
                         <small className="d-block text-muted">{role}</small>
                     </div>
                     <div className="col-lg-7">
-                        <p className="text-muted medium mb-0" dangerouslySetInnerHTML={{ __html: description }}></p>
+                        <p className={`text-muted medium ${fullInfo ? "mb-0" : "mb-4"}`} dangerouslySetInnerHTML={{ __html: description }}></p>
+
+                        {/* {!fullInfo && (<Link href="/projects" className="fw-medium d-flex align-items-center gap-1">Read More <Image src="/assets/icons/up-right-arrow.svg" alt="read more" width={16} height={16} className="me-1" /></Link>)} */}
                     </div>
                     <div className="col-12"></div>
                     {
@@ -99,7 +103,7 @@ export function FeaturedWorkTwo({ logo, company, role, description, end, start, 
                                         </div>
 
                                         <h5 className="regular text-uppercase fw-semibold">Impact</h5>
-                                        <p className="text-muted medium mb-0">{problem}</p>
+                                        <p className="text-muted medium mb-0">{impact}</p>
                                     </div>
                                     <div className="col-lg-7">
                                         <h5 className="regular text-uppercase fw-semibold">What it Does</h5>
