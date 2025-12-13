@@ -4,7 +4,7 @@ import { featuredWorks, works } from "@/configs";
 export default function Projects() {
   return (
     <>
-      <Breadcrumb page="Work" caption="Featured" />
+      <Breadcrumb page="Projects" caption="Featured" />
       <div className="container-fluid">
         <div className="container container-lg px-1 px-lg-0">
           <div className="row g-4 g-lg-5">
