@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet" />
+      <link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet" precedence="default" />
 
       <body className={`${inter.variable} h-100`}>
         <GuestHeader />

@@ -7,13 +7,13 @@ export function GuestHeader() {
             <nav className="container container-lg px-1 px-lg-0">
                 <div className="row justify-content-between align-items-center">
                     <Link href="/" className="col-auto">
-                        <span className="d-block regular fs-5 lh-28">Favour <span className="regular-italic">Ori</span></span>
-                        <span className="d-block smaller text-muted lh-16">Security Engineer</span>
+                        <span className="d-block regular fw-bolder fs-3">Favour Ori</span>
+                        <span className="d-block small text-muted lh-16">Security Engineer</span>
                     </Link>
                     <div className="col-auto">
                         <div className="d-flex gap-4">
                             {GuestHeaderMenu.map((m) => (
-                                <Link key={m.name} href={m.href} className="text-muted small">{m.name}</Link>
+                                <Link key={m.name} href={m.href} className="text-muted fs-18">{m.name}</Link>
                             ))}
                         </div>
                     </div>
