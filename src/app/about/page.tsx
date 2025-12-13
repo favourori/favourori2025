@@ -14,8 +14,8 @@ export default function About() {
                 <div className="col">
 
                 </div>
-                <div className="col-lg-7">
-                  <h1 className="display-5 regular mb-lg-4">Building the next generation of security automation</h1>
+                <div className="col-lg-6">
+                  <h1 className="display-5 regular mb-lg-4">Building the next generation of <span className="regular-italic">security automation</span></h1>
                   <p className="mb-lg-4">I'm a Security Engineer focused on building the next generation of security automation and application protection. My career spans DevSecOps, vulnerability management, SDLC security, threat modeling, and cloud-native security architectures.</p>
                   <p className="mb-lg-4">I've led security operations across highly regulated organizations, integrating advanced security tooling, building internal platforms, and driving measurable improvements in risk posture.
                   </p>
@@ -130,7 +130,7 @@ export default function About() {
                   <span className="d-block smaller text-muted text-uppercase mb-2">Contact</span>
                 </div>
                 <div className="col-lg-6">
-                  <h1 className="display-3 regular mb-lg-4 lh-1">Let's build the future of <span className="regular-italic">intelligent security</span>.</h1>
+                  <h1 className="display-5 regular mb-lg-4">Let's build the future of <span className="regular-italic">intelligent security</span>.</h1>
                 </div>
                 <div className="col-auto">
                   <p className="mb-lg-4">Ready to transform your security posture? I'd love to hear from you.</p>
