@@ -42,7 +42,7 @@ export default function Home() {
       {/* <SectionTitle title="Featured Work" /> */}
 
       <div className="container-fluid pb-5">
-        <div className="container-lg px-1 px-lg-0 py-5 my-3">
+        <div className="container-lg px-1 px-lg-0 py-lg-5 my-lg-3">
           <div className="row g-4 gy-lg-5">
             <div className="col-12 text-center mb-3">
               <h6 className="regular-italic">FEATURED</h6>
