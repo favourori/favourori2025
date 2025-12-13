@@ -7,11 +7,11 @@ export default function Home() {
       <div id="banner" className="container-fluid pt-5 h-100">
         <div className="container container-lg px-1 px-lg-0 h-100">
           <div className="row align-items-center align-items-center h-100">
-            <div className="col-lg-9">
+            <div className="col-lg-11">
               <div className="d-flex flex-column gap-5">
                 <div className="flex-shrink-0">
                   <h1 className="display-1 regular mb-0">
-                    I design and build secure <br className="d-none d-lg-block" />systems at scale. My work <br className="d-none d-lg-block" /> sits at the intersection of cloud security, application security, and intelligent automation, driving resilience across complex enterprise environments.
+                    I design and build secure systems at scale. My work sits at the intersection of cloud security, application security, and intelligent automation, driving resilience across complex enterprise environments.
                   </h1>
                 </div>
                 <div className="flex-shrink-0">
