@@ -1,5 +1,3 @@
-import { title } from "process";
-
 const featuredWorks = [
     {
         start: "2025",
@@ -25,7 +23,7 @@ const featuredWorks = [
         caption: "This is what vulnerability management should look like i n 2025.",
     },
     {
-        start: "2024",
+        start: "2025",
         end: "Current",
         company: "ThreatLens",
         role: "AI-Driven Threat Modeling Engine",
