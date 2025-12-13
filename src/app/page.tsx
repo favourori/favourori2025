@@ -10,12 +10,12 @@ export default function Home() {
             <div className="col-lg-9">
               <div className="d-flex flex-column gap-5">
                 <div className="flex-shrink-0">
-                  <h1 className="display-2 regular mb-0">
-                    I design and build secure systems at scale. My work sits at the intersection of cloud security, application security, and intelligent automation, driving resilience across complex enterprise environments.
+                  <h1 className="display-1 regular mb-0">
+                    I design and build secure <br className="d-none d-lg-block" />systems at scale. My work <br className="d-none d-lg-block" /> sits at the intersection of cloud security, application security, and intelligent automation, driving resilience across complex enterprise environments.
                   </h1>
                 </div>
                 <div className="flex-shrink-0">
-                  <div className="d-flex flex-row align-items-center gap-3 text-muted fs-18">
+                  <div className="d-flex flex-row align-items-center gap-3 text-muted">
                     <span className="d-flex align-items-center">
                       <span>Working out of</span>
                       <span className="d-flex align-items-center fw-medium text-dark ms-2">
