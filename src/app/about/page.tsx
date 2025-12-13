@@ -1,5 +1,5 @@
-import { SectionTitle } from "@/components";
-import { certifications, contact, impacts, philosophy, technicalDomains } from "@/configs";
+import { GalleryImage, SectionTitle, Works } from "@/components";
+import { certifications, contact, impacts, philosophy, technicalDomains, works } from "@/configs";
 
 export default function About() {
   return (
@@ -116,6 +116,27 @@ export default function About() {
             </div>
             <div className="col-lg-10">
               <h2 className="regular mb-0">Security should accelerate innovation, <span className="text-muted">not limit it.</span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="container-fluid border-top">
+        <div className="container px-1 px-lg-0 py-lg-5">
+          <div className="row gy-5">
+            <div className="col-12 py-lg-3 d-none d-lg-block"></div>
+            <div className="col-auto ms-auto">
+              <h1 className="display-3 regular">Some of my work has <br className="d-none d-lg-block" /> been recognized</h1>
+            </div>
+            <div className="col-12">
+              {works.map((w, i) => (
+                <Works key={i} {...w} />
+              ))}
+            </div>
+            <div className="col-12 py-lg-3 d-none d-lg-block"></div>
+            <div className="col-12">
+              <GalleryImage />
             </div>
           </div>
         </div>

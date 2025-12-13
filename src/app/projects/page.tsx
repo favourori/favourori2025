@@ -13,19 +13,6 @@ export default function Projects() {
                 <FeaturedWorkTwo {...f} />
               </div>
             ))}
-            <div className="col-12 py-lg-3 d-none d-lg-block"></div>
-            <div className="col-auto ms-auto">
-              <h1 className="display-3 regular">Some of my work has <br className="d-none d-lg-block" /> been recognized</h1>
-            </div>
-            <div className="col-12">
-              {works.map((w, i) => (
-                <Works key={i} {...w} />
-              ))}
-            </div>
-            <div className="col-12 py-lg-3 d-none d-lg-block"></div>
-            <div className="col-12">
-              <GalleryImage />
-            </div>
             <div className="col-12 py-lg-5"></div>
           </div>
         </div>
