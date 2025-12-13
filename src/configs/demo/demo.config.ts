@@ -21,6 +21,7 @@ const featuredWorks = [
         ],
         impact: "PilotPatch doesn't just show vulnerabilities-it eliminates noise and highlights what truly matters. Teams ship faster, remediate smarter, and operate with clarity.",
         caption: "This is what vulnerability management should look like i n 2025.",
+        preview: "/assets/img/projects/pilotpatch.gif",
     },
     {
         start: "2025",
@@ -41,6 +42,7 @@ const featuredWorks = [
         ],
         impact: "Security shifts fully left. Architects gain instant insight. Engineers fix issues before code is written. CISOs get risk clarity with zero friction.",
         caption: "ThreatLens is not just a tool—it's a new foundation for secure-by-design engineering.",
+        preview: "/assets/img/projects/threatlens.gif",
     },
 ];
 

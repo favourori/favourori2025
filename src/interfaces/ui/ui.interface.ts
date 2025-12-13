@@ -18,6 +18,7 @@ export interface FeaturedWorkProps {
     problem: string;
     purpose: string[];
     impact: string;
+    preview: string;
     fullInfo?: boolean;
 }
 
