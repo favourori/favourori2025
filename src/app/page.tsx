@@ -10,7 +10,7 @@ export default function Home() {
             <div className="col-lg-9">
               <div className="d-flex flex-column gap-5">
                 <div className="flex-shrink-0">
-                  <h1 className="display-1 regular mb-0">
+                  <h1 className="display-2 regular mb-0">
                     I design and build secure systems at scale. My work sits at the intersection of cloud security, application security, and intelligent automation, driving resilience across complex enterprise environments.
                   </h1>
                 </div>
