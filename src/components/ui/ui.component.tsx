@@ -135,7 +135,7 @@ export function GalleryImage() {
                             className={`scroll-row ${rowIndex % 2 === 0 ? "scroll-left" : "scroll-right"} d-flex gap-3 ${rowIndex !== 0 ? "mt-4" : ""}`}
                         >
                             {rowImages.map((imgSrc, index) => (
-                                <img key={index} src={imgSrc} className="gallery-img bg-light" />
+                                <img key={index} src={`/assets/gallery/${imgSrc}`} className="gallery-img bg-light" />
                             ))}
                         </div>
                     ))}

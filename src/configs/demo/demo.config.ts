@@ -177,9 +177,9 @@ const works = [
 ];
 
 const galleryImages = [
-    ["/img1.jpg", "/img2.jpg", "/img3.jpg", "/img4.jpg", "/img5.jpg", "/img1.jpg", "/img2.jpg", "/img3.jpg", "/img4.jpg", "/img5.jpg"], // Row 1
-    ["/img6.jpg", "/img7.jpg", "/img8.jpg", "/img9.jpg", "/img10.jpg", "/img6.jpg", "/img7.jpg", "/img8.jpg", "/img9.jpg", "/img10.jpg"], // Row 2
-    ["/img11.jpg", "/img12.jpg", "/img13.jpg", "/img14.jpg", "/img15.jpg", "/img11.jpg", "/img12.jpg", "/img13.jpg", "/img14.jpg", "/img15.jpg"], // Row 3
+    ["1.jpg", "2.jpg", "1.jpg", "2.jpg", "1.jpg", "2.jpg", "1.jpg", "2.jpg", "1.jpg", "2.jpg"],
+    ["1.jpg", "2.jpg", "1.jpg", "2.jpg", "1.jpg", "2.jpg", "1.jpg", "2.jpg", "1.jpg", "2.jpg"],
+    ["1.jpg", "2.jpg", "1.jpg", "2.jpg", "1.jpg", "2.jpg", "1.jpg", "2.jpg", "1.jpg", "2.jpg"],
 ];
 
 export {
