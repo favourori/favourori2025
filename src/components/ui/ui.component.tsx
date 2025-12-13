@@ -93,7 +93,7 @@ export function FeaturedWorkTwo({ logo, company, role, description, end, start, 
                             <div className="col-12">
                                 <div className="row g-4 justify-content-between">
                                     <div className="col-lg-4">
-                                        <div className="mb-lg-5">
+                                        <div className="mb-4 mb-lg-5">
                                             <h5 className="regular text-uppercase fw-semibold">The Problem</h5>
                                             <p className="text-muted medium mb-0">{problem}</p>
                                         </div>
