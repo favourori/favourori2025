@@ -1,4 +1,4 @@
-import { GalleryImage, SectionTitle, Works } from "@/components";
+import { GalleryImage, Image, SectionTitle, Works } from "@/components";
 import { certifications, contact, impacts, philosophy, technicalDomains, works } from "@/configs";
 
 export default function About() {
@@ -6,13 +6,13 @@ export default function About() {
     <>
       <div className="h-84"></div>
 
-      <div className="container-fluid py-5" data-aos="fade-up">
+      <div className="container-fluid py-5">
         <div className="container px-1 px-lg-0 py-lg-5">
           <div className="row justify-content-center pt-lg-4">
             <div className="col-lg-10">
-              <div className="row g-4 justify-content-between">
+              <div className="row g-4 gx-lg-5 justify-content-between align-items-center">
                 <div className="col">
-
+                  <img src="/assets/img/avatar.jpg" alt="avatar" className="img-fluid rounded-4" />
                 </div>
                 <div className="col-lg-6">
                   <h1 className="display-5 regular mb-lg-4">Building the next generation of <span className="regular-italic">security automation</span></h1>
@@ -27,7 +27,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container-fluid border-top py-5" data-aos="fade-up" data-aos-duration="1350">
+      <div className="container-fluid border-top py-5">
         <div className="container px-1 px-lg-0 py-lg-5">
           <div className="row justify-content-center">
             <div className="col-lg-10">
@@ -65,7 +65,7 @@ export default function About() {
 
       <div className="container-fluid border-top py-5" style={{
         backgroundColor: "#f3f4f64d"
-      }} data-aos="fade-up">
+      }}>
         <div className="container px-1 px-lg-0 py-lg-5">
           <div className="row justify-content-center">
             <div className="col-lg-10">
@@ -88,7 +88,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container-fluid border-top py-5" data-aos="fade-up">
+      <div className="container-fluid border-top py-5  d-none">
         <div className="container px-1 px-lg-0 py-lg-5">
           <div className="row justify-content-center">
             <div className="col-lg-10">
@@ -111,10 +111,10 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-10 py-5">
+            <div className="col-lg-10 py-5 d-none">
               <hr className="my-0" />
             </div>
-            <div className="col-lg-10">
+            <div className="col-lg-10 d-none">
               <h2 className="regular mb-0">Security should accelerate innovation, <span className="text-muted">not limit it.</span></h2>
             </div>
           </div>
@@ -122,12 +122,12 @@ export default function About() {
       </div>
 
 
-      <div className="container-fluid border-top" data-aos="fade-up">
+      <div className="container-fluid border-top">
         <div className="container px-1 px-lg-0 py-lg-5">
           <div className="row gy-5">
             <div className="col-12 py-lg-3 d-none d-lg-block"></div>
             <div className="col-auto ms-auto">
-              <h1 className="display-3 regular">Some of my work has <br className="d-none d-lg-block" /> been recognized</h1>
+              <h1 className="display-3 regular">Conferences & Engagement</h1>
             </div>
             <div className="col-12">
               {works.map((w, i) => (
@@ -142,7 +142,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container-fluid border-top py-5" data-aos="fade-up">
+      <div className="container-fluid border-top py-5">
         <div className="container px-1 px-lg-0 py-lg-5">
           <div className="row justify-content-center">
             <div className="col-lg-10">

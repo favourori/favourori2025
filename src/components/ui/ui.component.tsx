@@ -25,7 +25,7 @@ export function SectionTitle({ title }: SectionTitleProps) {
         <div className="container-fluid border-bottom h-84">
             <div className="container px-1 px-lg-0">
                 <div className="row justify-content-center">
-                    <div className="col-lg-10" data-aos="fade-up">
+                    <div className="col-lg-10">
                         <span className="text-uppercase fw-light text-muted">{title}</span>
                     </div>
                 </div>
@@ -58,9 +58,9 @@ export function FeaturedWork({ start, company, role, description, skills }: Feat
 
 export function FeaturedWorkTwo({ logo, company, role, description, end, start }: FeaturedWorkProps) {
     return (
-        <div className="card border rounded-5 mb-4" data-aos="fade-up" data-aos-duration="1000">
+        <div className="card border rounded-5 mb-4">
             <div className="card-body p-4">
-                <div className="rounded-4 bg-light p-5 h-783 d-flex align-items-center justify-content-center" data-aos="zoom-in-up" data-aos-duration="900">
+                <div className="rounded-4 bg-light p-5 h-783 d-flex align-items-center justify-content-center">
                     {logo && (
                         <img
                             src={logo}
@@ -95,7 +95,7 @@ export function FeaturedWorkTwo({ logo, company, role, description, end, start }
 
 export function Works({ title, works }: WorksProps) {
     return (
-        <div className="border-top py-4" data-aos="fade-up">
+        <div className="border-top py-4">
             <div className="row py-2">
                 <div className="col-lg-2">
                     <h6 className="fw-semibold mb-4">{title}</h6>
@@ -126,7 +126,7 @@ export function Works({ title, works }: WorksProps) {
 
 export function GalleryImage() {
     return (
-        <div className="card border rounded-5 py-4 px-2" data-aos="fade-up">
+        <div className="card border rounded-5 py-4 px-2">
             <div className="card-body">
                 <div className="gallery-container">
                     {galleryImages.map((rowImages, rowIndex) => (
