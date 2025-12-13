@@ -74,7 +74,7 @@ export default function About() {
                   <span className="d-block smaller text-muted text-uppercase">Philosophy</span>
                 </div>
                 <div className="col-12">
-                  <h1 className="regular mb-4">Security must be...</h1>
+                  <h1 className="regular">Security must be...</h1>
                 </div>
                 {philosophy.map((p, i) => (
                   <div key={i} className="col-lg-3">
