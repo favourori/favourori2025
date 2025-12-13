@@ -15,6 +15,10 @@ export interface FeaturedWorkProps {
     logo?: string;
     start?: string;
     end?: string;
+    problem: string;
+    purpose: string[];
+    impact: string;
+    fullInfo?: boolean;
 }
 
 export interface WorksProps {
