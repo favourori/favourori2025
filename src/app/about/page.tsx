@@ -127,7 +127,7 @@ export default function About() {
           <div className="row gy-5">
             <div className="col-12 py-lg-3 d-none d-lg-block"></div>
             <div className="col-auto ms-auto">
-              <h1 className="display-3 regular">Conferences & Engagement</h1>
+              <h1 className="display-3 regular">Conferences & Engagements</h1>
             </div>
             <div className="col-12">
               {works.map((w, i) => (
