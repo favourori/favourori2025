@@ -56,19 +56,17 @@ export function FeaturedWork({ start, company, role, description, skills }: Feat
     )
 }
 
-export function FeaturedWorkTwo({ logo, company, role, description, end, start, problem, purpose, impact, fullInfo = false }: FeaturedWorkProps) {
+export function FeaturedWorkTwo({ preview, company, role, description, end, start, problem, purpose, impact, fullInfo = false }: FeaturedWorkProps) {
     return (
         <div className="card border rounded-5 mb-4 featured-work-card">
             <div className="card-body p-4">
-                <div className="rounded-4 bg-light p-5 h-783 d-flex align-items-center justify-content-center">
-                    {logo && (
-                        <img
-                            src={logo}
-                            alt={company}
-                            className="img-fluid"
-                            style={{ maxHeight: "60px" }}
-                        />
-                    )}
+                <div className="rounded-4 p-5 h-783 d-flex align-items-center justify-content-center" style={{
+                    backgroundImage: `url(${preview})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover"
+                }}>
+
                 </div>
             </div>
             <div className="card-footer border-0 bg-transparent px-4 pb-4">
