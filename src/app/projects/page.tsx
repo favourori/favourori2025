@@ -10,7 +10,7 @@ export default function Projects() {
           <div className="row g-4 g-lg-5">
             {featuredWorks.map((f, i) => (
               <div key={i} className="col-12">
-                <FeaturedWorkTwo {...f} />
+                <FeaturedWorkTwo {...f} fullInfo/>
               </div>
             ))}
             <div className="col-12 py-lg-5"></div>

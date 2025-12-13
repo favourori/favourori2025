@@ -1,4 +1,4 @@
-import { FeaturedWork, Image, Link, SectionTitle } from "@/components";
+import { FeaturedWork, FeaturedWorkTwo, Image, Link, SectionTitle } from "@/components";
 import { featuredWorks } from "@/configs";
 
 export default function Home() {
@@ -41,10 +41,26 @@ export default function Home() {
         </div>
       </div>
 
-      <SectionTitle title="Featured Work" />
+      {/* <SectionTitle title="Featured Work" /> */}
 
       <div className="container-fluid pb-5">
-        <div className="container px-1 px-lg-0">
+        <div className="container-lg px-1 px-lg-0 py-5 my-3">
+          <div className="row g-4 gy-lg-5">
+            <div className="col-12 text-center mb-3">
+              <h6 className="regular-italic">FEATURED</h6>
+              <h1 className="regular display-1">WORK</h1>
+            </div>
+            {featuredWorks.map((f, i) => (
+              <div key={i} className="col-12">
+                <FeaturedWorkTwo {...f} />
+              </div>
+            ))}
+            <div className="col-12">
+              <Link href="/projects" className="btn btn-outline-secondary border rounded-4 w-100 lh-lg py-3 fs-18 fw-medium">View My Projects</Link>
+            </div>
+          </div>
+        </div>
+        <div className="container px-1 px-lg-0 d-none">
           <div className="row justify-content-center gy-5">
             <div className="col-lg-10">
               <div className="list-group list-group-flush">

@@ -56,7 +56,7 @@ export function FeaturedWork({ start, company, role, description, skills }: Feat
     )
 }
 
-export function FeaturedWorkTwo({ logo, company, role, description, end, start }: FeaturedWorkProps) {
+export function FeaturedWorkTwo({ logo, company, role, description, end, start, problem, purpose, impact, fullInfo = false }: FeaturedWorkProps) {
     return (
         <div className="card border rounded-5 mb-4">
             <div className="card-body p-4">
@@ -72,21 +72,56 @@ export function FeaturedWorkTwo({ logo, company, role, description, end, start }
                 </div>
             </div>
             <div className="card-footer border-0 bg-transparent px-4 pb-4">
-                <div className="row g-4 justify-content-between align-items-center">
+                <div className="row g-4 justify-content-between">
                     <div className="col-auto">
-                        <p className="d-flex gap-1 align-items-center text-muted text-uppercase smallest mb-0">
-                            {company && <span>{company}</span>}{" "}
-                            <span className="fs-4">&middot;</span>
+                        <p className="d-flex gap-1 align-items-center text-muted text-uppercase smaller mb-2">
+                            {/* {company && <span>{company}</span>}{" "} */}
+                            {/* <span className="fs-4">&middot;</span> */}
                             {start && <span>{start}</span>}{" "}
                             <span>&rarr;</span>
                             {end && <span>{end}</span>}
                         </p>
-                        <h6 className="regular text-dark fs-4 mb-2">{company}</h6>
+                        <h6 className="regular fw-bold text-dark fs-1 mb-2">{company}</h6>
                         <small className="d-block text-muted">{role}</small>
                     </div>
                     <div className="col-lg-7">
-                        <p className="text-muted small mb-0">{description}</p>
+                        <p className="text-muted medium mb-0" dangerouslySetInnerHTML={{ __html: description }}></p>
                     </div>
+                    <div className="col-12"></div>
+                    {
+                        fullInfo && (
+                            <div className="col-12">
+                                <div className="row g-4 justify-content-between">
+                                    <div className="col-lg-4">
+                                        <div className="mb-lg-5">
+                                            <h5 className="regular text-uppercase fw-semibold">The Problem</h5>
+                                            <p className="text-muted medium mb-0">{problem}</p>
+                                        </div>
+
+                                        <h5 className="regular text-uppercase fw-semibold">Impact</h5>
+                                        <p className="text-muted medium mb-0">{problem}</p>
+                                    </div>
+                                    <div className="col-lg-7">
+                                        <h5 className="regular text-uppercase fw-semibold">What it Does</h5>
+                                        <div className="list-group list-group-flush medium">
+                                            {purpose.map((p, i) => (
+                                                <div key={i} className="list-group-item d-flex align-items-center gap-2 bg-transparent border-0 text-muted px-0">
+                                                    <i className="iconsax text-success fs-6" icon-name="tick-circle"></i>{p}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    {/* <div className="col-12">
+                                        <hr className="my-2 border" />
+                                    </div>
+                                    <div className="col-12">
+                                        <h6 className="regular text-uppercase fw-semibold">Impact</h6>
+                                        <p className="text-muted small mb-0">{problem}</p>
+                                    </div> */}
+                                </div>
+                            </div>
+                        )
+                    }
                 </div>
             </div>
         </div>

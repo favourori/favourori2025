@@ -2,20 +2,47 @@ import { title } from "process";
 
 const featuredWorks = [
     {
-        start: "2024",
+        start: "2025",
         end: "Current",
         company: "PilotPatch",
         role: "Enterprise Security Control Plane",
-        description: "A unified platform that brings every security tool into one source of truth. Connects to SAST, DAST, SCA, CSPM, SIEM, EDR, container scanners, and cloud providers. Deduplicates findings, prioritizes by business context, and visualizes your entire security posture.",
+        description: `<p>This platform provides a single source of truth for an organization’s security operations by bringing all security tools into one unified system. Instead of managing disconnected solutions, it connects to SAST, DAST, SCA, CSPM, SIEM, EDR, container scanners, and cloud providers to deliver a complete and continuously updated view of security risk.</p>
+        
+
+<p>It intelligently deduplicates and correlates findings across tools, reducing noise and revealing how issues relate to one another. By applying business context such as asset importance, data sensitivity, and exposure, it prioritizes risks based on real world impact rather than raw severity scores.</p>
+
+<p class="mb-0">With real time dashboards and clear visualizations, teams can easily understand the organization’s overall security posture and track changes over time. The platform acts as a shared security cockpit for executives, engineers, and analysts, enabling better alignment, faster decision making, and more effective risk reduction.</p>`,
         skills: ["Vulnerability Management", "Data Correlation", "Risk Intelligence"],
+        problem: "Outdated dashboards, duplicated vulnerabilities, and disconnected tools slow down every security team.",
+        purpose: [
+            "Connects to SAST, DAST, SCA, CSPM, SIEM, EDR, container scanners, and cloud providers",
+            "Deduplicates and correlates findings across tools",
+            "Prioritizes issues using business context and attack path analysis",
+            "Visualizes organization's entire security posture in real time",
+            "Provides one security cockpit for executives, engineers, and analysts"
+        ],
+        impact: "PilotPatch doesn't just show vulnerabilities-it eliminates noise and highlights what truly matters. Teams ship faster, remediate smarter, and operate with clarity.",
+        caption: "This is what vulnerability management should look like i n 2025.",
     },
     {
         start: "2024",
         end: "Current",
         company: "ThreatLens",
-        role: "Enterprise Security Control Plane",
-        description: "Upload your architecture → get instant threats, attack paths, and remediation strategies. Uses AI and pattern recognition to generate complete threat models with STRIDE, MITRE ATT&CK, and CWE mappings. Supports CI/CD integration and architecture drift detection.",
+        role: "AI-Driven Threat Modeling Engine",
+        description: `<p>This platform simplifies threat modeling by turning your architecture into immediate, actionable security insight. You upload network diagrams, application flows, or system designs, and the platform uses AI and pattern recognition to understand every component, data flow, and trust boundary. It automatically identifies threats and attack paths, then generates a complete threat model mapped to industry standards like STRIDE, MITRE ATT and CK, and CWE, giving teams a clear and structured view of risk.</p>
+
+<p class="mb-0">Beyond identification, it delivers practical remediation guidance that engineers can act on right away. The platform supports versioning, CI and CD integration, and architecture drift detection, allowing threat models to evolve alongside your systems. This helps teams continuously validate security as designs change and ensures risks are addressed early and consistently throughout the development lifecycle.</p>`,
         skills: ["Threat Modeling", "AI/ML", "Secure-by-Design"],
+        problem: "Threat modeling i s critical, but most teams avoid it because it's slow, manual, and inconsistent.",
+        purpose: [
+            "Upload network diagrams, application flow maps, or architecture diagrams",
+            "System interprets every component using AI and pattern recognition",
+            "Generates complete threat model: STRIDE, MITRE ATT&CK, and CWE mappings",
+            "Produces actionable remediation recommendations",
+            "Supports versioning, CI/CD integration, and architecture drift detection"
+        ],
+        impact: "Security shifts fully left. Architects gain instant insight. Engineers fix issues before code is written. CISOs get risk clarity with zero friction.",
+        caption: "ThreatLens is not just a tool—it's a new foundation for secure-by-design engineering.",
     },
 ];
 
