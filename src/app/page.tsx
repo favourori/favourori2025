@@ -27,7 +27,12 @@ export default function Home() {
                       <span>Local Time</span>
                       <span className="d-flex align-items-center fw-medium text-dark ms-2">
                         <Image src="/assets/icons/clock.svg" alt="clock" width={14} height={14} className="me-1" />
-                        4:07 PM
+                        {new Intl.DateTimeFormat("en-US", {
+                          timeZone: "America/Chicago",
+                          hour: "numeric",
+                          minute: "2-digit",
+                          hour12: true,
+                        }).format(new Date())}
                       </span>
                     </span>
 
