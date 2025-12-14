@@ -11,7 +11,7 @@ export default function Home() {
               <div className="d-flex flex-column gap-5">
                 <div className="flex-shrink-0">
                   <h1 className="display-1 regular mb-0">
-                    I design & build secure systems at scale. <br/> My work sits at the intersection of cloud security, application security, & intelligent automation, driving resilience across complex enterprise environments.
+                    I design & build secure systems at scale. <br /> My work sits at the intersection of cloud security, application security, & intelligent automation, driving resilience across complex enterprise environments.
                   </h1>
                 </div>
                 <div className="flex-shrink-0">
@@ -41,7 +41,7 @@ export default function Home() {
 
       {/* <SectionTitle title="Featured Work" /> */}
 
-      <div className="container-fluid pb-5">
+      <div className="container-fluid">
         <div className="container-lg px-1 px-lg-0 py-lg-5 my-lg-3">
           <div className="row g-4 gy-lg-5">
             <div className="col-12 text-center mb-3">
@@ -53,25 +53,6 @@ export default function Home() {
                 <FeaturedWorkTwo {...f} />
               </div>
             ))}
-            <div className="col-12">
-              <Link href="/projects" className="btn btn-outline-secondary border rounded-4 w-100 lh-lg py-3 fs-18 fw-medium">View My Projects</Link>
-            </div>
-          </div>
-        </div>
-        <div className="container px-1 px-lg-0 d-none">
-          <div className="row justify-content-center gy-5">
-            <div className="col-lg-10">
-              <div className="list-group list-group-flush">
-                {featuredWorks.map((f, i) => (
-                  <div key={i} className="list-group-item bg-transparent p-0">
-                    <FeaturedWork {...f} />
-                  </div>
-                ))}
-                <div className="list-group-item bg-transparent p-0 py-5">
-                  <Link href="/projects" className="btn btn-outline-secondary w-100 lh-lg py-3 fs-18 fw-medium">View My Projects</Link>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
