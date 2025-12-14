@@ -1,7 +1,12 @@
+"use client";
+
 import { Link } from "@/components";
 import { GuestHeaderMenu } from "@/configs";
+import { usePathname } from "@/hooks";
 
 export function GuestHeader() {
+    const pathname = usePathname();
+
     return (
         <header className="container-fluid d-flex align-items-center fixed-top h-84" id="header">
             <nav className="container container-lg px-1 px-lg-0">
@@ -12,9 +17,18 @@ export function GuestHeader() {
                     </Link>
                     <div className="col-auto">
                         <div className="d-flex gap-4">
-                            {GuestHeaderMenu.map((m) => (
-                                <Link key={m.name} href={m.href} className="text-muted">{m.name}</Link>
-                            ))}
+                            {GuestHeaderMenu.map((m) => {
+                                const isActive = pathname === m.href;
+                                return (
+                                    <Link
+                                        key={m.name}
+                                        href={m.href}
+                                        className={`text-muted ${isActive ? "text-primary border-bottom border-1 border-primary" : "hover:text-primary"}`}
+                                    >
+                                        {m.name}
+                                    </Link>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>

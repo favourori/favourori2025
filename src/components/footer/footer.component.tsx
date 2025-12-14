@@ -24,7 +24,7 @@ export function GuestFooter() {
                                             <div key={i} className="list-group-item bg-transparent px-0 lh-lg py-3">
                                                 <div className="d-flex justify-content-between">
                                                     <span className="text-muted">{c.name}</span>
-                                                    <a href={c.href}>{c.label}</a>
+                                                    <a href={c.href} target="_black">{c.label}</a>
                                                 </div>
                                             </div>
                                         ))}

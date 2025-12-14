@@ -75,3 +75,7 @@ body {
 .featured-work-card:hover a {
     color: var(--bs-primary);
 }
+
+.header a:hover {
+    color: var(--bs-black) !important;
+}
