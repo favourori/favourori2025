@@ -7,15 +7,15 @@ export default function Home() {
       <div id="banner" className="container-fluid pt-5 h-100">
         <div className="container container-lg px-1 px-lg-0 h-100">
           <div className="row align-items-center align-items-center h-100">
-            <div className="col-lg-9">
+            <div className="col-lg-11">
               <div className="d-flex flex-column gap-5">
                 <div className="flex-shrink-0">
                   <h1 className="display-1 regular mb-0">
-                    I design and build secure systems at scale. My work sits at the intersection of cloud security, application security, and intelligent automation, driving resilience across complex enterprise environments.
+                    I design & build secure systems at scale. <br/> My work sits at the intersection of cloud security, application security, & intelligent automation, driving resilience across complex enterprise environments.
                   </h1>
                 </div>
                 <div className="flex-shrink-0">
-                  <div className="d-flex flex-row align-items-center gap-3 text-muted fs-18">
+                  <div className="d-flex flex-row align-items-center gap-3 text-muted">
                     <span className="d-flex align-items-center">
                       <span>Working out of</span>
                       <span className="d-flex align-items-center fw-medium text-dark ms-2">
@@ -42,7 +42,7 @@ export default function Home() {
       {/* <SectionTitle title="Featured Work" /> */}
 
       <div className="container-fluid pb-5">
-        <div className="container-lg px-1 px-lg-0 py-5 my-3">
+        <div className="container-lg px-1 px-lg-0 py-lg-5 my-lg-3">
           <div className="row g-4 gy-lg-5">
             <div className="col-12 text-center mb-3">
               <h6 className="regular-italic">FEATURED</h6>

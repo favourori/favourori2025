@@ -59,9 +59,21 @@ export function FeaturedWork({ start, company, role, description, skills }: Feat
 export function FeaturedWorkTwo({ preview, company, role, description, end, start, problem, purpose, impact, fullInfo = false }: FeaturedWorkProps) {
     return (
         <div className="card border rounded-5 mb-4 featured-work-card">
-            <div className="card-body px-4 py-1">
-                <div className="position-relative h-783">
-                    <Image src={preview} alt={company} fill objectFit="contain" />
+            <div className="card-body p-4 pb-0">
+                <div className="position-relative overflow-hidden rounded-4 w-100 h-783">
+                    <div className="w-100">
+                        <Image
+                            src={preview}
+                            alt={company}
+                            width={783}
+                            height={783}
+                            style={{
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                            }}
+                        />
+                    </div>
                 </div>
             </div>
             <div className="card-footer border-0 bg-transparent px-4 pb-4">
