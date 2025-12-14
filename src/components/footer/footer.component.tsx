@@ -62,9 +62,9 @@ export function GuestFooter() {
                     {GuestHeaderMenu.map((m, i) => {
                         const isActive = pathname === m.href;
                         return (
-                            <div className={`list-group-item bg-transparent fw-medium py-3 ${isActive ? "text-black" : "text-muted"}`} data-bs-dismiss="offcanvas">
+                            <div key={i} className={`list-group-item bg-transparent fw-medium py-3 ${isActive ? "text-black" : "text-muted"}`} data-bs-dismiss="offcanvas">
                                 <Link
-                                    key={i}
+
                                     href={m.href}
                                 >
                                     {m.name}
