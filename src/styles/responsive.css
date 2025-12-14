@@ -4,8 +4,12 @@
 }
 
 @media (max-width: 575.98px) {
+    #banner {
+        height: 70% !important;
+    }
+
     #banner .display-1 {
-        font-size: clamp(2rem, 8vw, 2.8rem);
+        font-size: clamp(2rem, 8vw, 5.8rem);
     }
 
     #banner .caption {
