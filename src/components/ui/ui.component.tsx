@@ -49,7 +49,7 @@ export function FeaturedWork({ start, company, role, description, skills }: Feat
                     <p className="smaller text-muted">{start}</p>
                     <h2 className="regular fs-36">{company}</h2>
                     <p className="text-muted">{role}</p>
-                    <p className="text-muted mb-0">{description}</p>
+                    <div className="text-muted mb-0" dangerouslySetInnerHTML={{ __html: description }}></div>
                 </div>
                 <div className="col-lg-4">
                     <div className="d-flex flex-wrap gap-2">
@@ -100,9 +100,8 @@ export function FeaturedWorkTwo({
                     </div>
 
                     <div className="col-lg-7">
-                        <p
+                        <div
                             className={`text-muted medium ${fullInfo ? "mb-0" : "mb-4"}`}
-                            suppressHydrationWarning
                             dangerouslySetInnerHTML={{ __html: description }}
                         />
                     </div>
