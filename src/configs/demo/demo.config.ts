@@ -109,8 +109,8 @@ const impacts = [
 const contact = [
     {
         name: "Email",
-        label: "favour@example.com",
-        href: "mailto:favour@example.com",
+        label: "favourori96@gmail[dot]com",
+        href: "mailto:favourori96@gmail[dot]com",
     },
     {
         name: "LinkedIn",
