@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface HeaderProps {
     title?: string;
 }
@@ -34,4 +36,14 @@ export interface WorksProps {
 export interface BreadcrumbProps {
     page: string;
     caption: string;
+}
+
+export interface AppDrawerProps {
+    uuid: string;
+    title?: string;
+    description?: string;
+    children?: ReactNode;
+    footer?: ReactNode;
+    placement?: "bottom" | "end" | "start";
+    className?: string;
 }

@@ -28,6 +28,11 @@ body {
     letter-spacing: -2.4px;
 }
 
+#mobileMenu a {
+    color: var(--bs-secondary);
+    opacity: .8;
+}
+
 .dot {
     width: 6px;
     height: 6px;
@@ -78,4 +83,10 @@ body {
 
 .header a:hover {
     color: var(--bs-black) !important;
+}
+
+.bg-blur {
+    background-color: rgba(var(--background), 0.95);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
 }
