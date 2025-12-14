@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const siteMetadata: Metadata = {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000"),
+    metadataBase: "https://favourori.com",
     title: "Favour Ori | Senior Security Engineer",
     description:
         "Security Engineer, Product Security Architect, and DevSecOps Expert. Building secure systems at scale.",

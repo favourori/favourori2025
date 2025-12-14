@@ -1,6 +1,6 @@
 "use client";
 
-import { Link } from "@/components";
+import { Image, Link } from "@/components";
 import { GuestHeaderMenu } from "@/configs";
 import { usePathname } from "@/hooks";
 
@@ -16,14 +16,17 @@ export function GuestHeader() {
                         <span className="d-block small text-muted lh-16">Security Engineer</span>
                     </Link>
                     <div className="col-auto">
-                        <div className="d-flex gap-4">
+                        <button type="button" className="btn d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                            <Image src="/assets/icons/menu.svg" alt="menu" width={24} height={24} />
+                        </button>
+                        <div className="d-none d-lg-flex gap-4">
                             {GuestHeaderMenu.map((m) => {
                                 const isActive = pathname === m.href;
                                 return (
                                     <Link
                                         key={m.name}
                                         href={m.href}
-                                        className={`text-muted ${isActive ? "text-primary border-bottom border-1 border-primary" : "hover:text-primary"}`}
+                                        className={`${isActive ? "text-black" : "text-muted hover:text-dark"}`}
                                     >
                                         {m.name}
                                     </Link>

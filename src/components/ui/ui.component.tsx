@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import {
+    AppDrawerProps,
     BreadcrumbProps,
     FeaturedWorkProps,
     SectionTitleProps,
@@ -78,7 +79,7 @@ export function FeaturedWorkTwo({
     fullInfo = false,
 }: FeaturedWorkProps) {
     return (
-        <div className="card border rounded-5 mb-4 featured-work-card">
+        <div className="card border rounded-5 mb-2 mb-lg-4 featured-work-card">
             <div className="card-body p-4 mb-lg-4">
                 <div className="position-relative overflow-hidden rounded-4 h-783">
                     <img src={preview} alt={company} className="w-100 h-100" />
@@ -184,6 +185,32 @@ export function GalleryImage() {
             </div>
         </div>
     );
+}
+
+export function AppDrawer({ uuid, title, description, children, footer, placement = "bottom", className = "rounded-top-5" }: AppDrawerProps) {
+    return (
+        <div className={`offcanvas offcanvas-${placement} border-0 shadow-md ${className}`} tabIndex={-1} id={`${uuid}`} aria-labelledby={`${uuid}Label`}>
+            <div className="offcanvas-header d-flex flex-column gap-3 text-center p-3 py-lg-4 w-100">
+                {(title || description) && (<div>
+                    {title && (<h6 className="offcanvas-title fw-bold w-100 mb-1" id={`${uuid}Label`}>{title}</h6>)}
+                    {description && (<p className="small fw-normal">{description}</p>)}
+                </div>)}
+                <a role="button" data-bs-dismiss="offcanvas" aria-label="Close" className="btn fw-medium text-dark fs-1 lh-1 ms-auto"><i className="iconsax display-4" icon-name="x"></i></a>
+            </div>
+            <div className="offcanvas-body p-3 py-lg-4">
+                {children}
+            </div>
+            {footer && (
+                <div className="offcanvas-footer p-3 py-lg-4">
+                    <div className="row justify-content-center">
+                        <div className="col-sm-8 col-xxl-5">
+                            {footer}
+                        </div>
+                    </div>
+                </div>
+            )}
+        </div>
+    )
 }
 
 export { Link, Image };

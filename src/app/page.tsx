@@ -4,7 +4,7 @@ import { featuredWorks } from "@/configs";
 export default function Home() {
   return (
     <>
-      <div id="banner" className="container-fluid pt-5 h-100">
+      <div id="banner" className="container-fluid pt-lg-5 h-100">
         <div className="container container-lg px-1 px-lg-0 h-100">
           <div className="row align-items-center align-items-center h-100">
             <div className="col-lg-11">
@@ -15,27 +15,30 @@ export default function Home() {
                   </h1>
                 </div>
                 <div className="flex-shrink-0">
-                  <div className="d-flex flex-row align-items-center gap-3 text-muted">
-                    <span className="d-flex align-items-center">
-                      <span>Working out of</span>
-                      <span className="d-flex align-items-center fw-medium text-dark ms-2">
-                        <Image src="/assets/icons/map.svg" alt="map" width={14} height={14} className="me-1" />
-                        Remote
+                  <div className="row gy-2 align-items-center text-muted caption">
+                    <div className="col-auto">
+                      <span className="d-flex align-items-center">
+                        <span>Working out of</span>
+                        <span className="d-flex align-items-center fw-medium text-dark ms-2">
+                          <Image src="/assets/icons/map.svg" alt="map" width={14} height={14} className="me-1" />
+                          Remote
+                        </span>
                       </span>
-                    </span>
-                    <span className="d-flex align-items-center">
-                      <span>Local Time</span>
-                      <span className="d-flex align-items-center fw-medium text-dark ms-2">
-                        <Image src="/assets/icons/clock.svg" alt="clock" width={14} height={14} className="me-1" />
-                        {new Intl.DateTimeFormat("en-US", {
-                          timeZone: "America/Chicago",
-                          hour: "numeric",
-                          minute: "2-digit",
-                          hour12: true,
-                        }).format(new Date())}
+                    </div>
+                    <div className="col-auto">
+                      <span className="d-flex align-items-center">
+                        <span>Local Time</span>
+                        <span className="d-flex align-items-center fw-medium text-dark ms-2">
+                          <Image src="/assets/icons/clock.svg" alt="clock" width={14} height={14} className="me-1" />
+                          {new Intl.DateTimeFormat("en-US", {
+                            timeZone: "America/Chicago",
+                            hour: "numeric",
+                            minute: "2-digit",
+                            hour12: true,
+                          }).format(new Date())}
+                        </span>
                       </span>
-                    </span>
-
+                    </div>
                   </div>
                 </div>
               </div>
