@@ -41,7 +41,7 @@ export function GuestFooter() {
                         <div className="col-lg-10">
                             <div className="row justify-content-between align-items-center">
                                 <div className="col-auto">
-                                    <Link href="/" className="lh-28"><span className="d-block regular text-dark fs-4">Favour <span className="regular-italic">Ori</span></span></Link>
+                                    <Link href="/" className="lh-28"><span className="d-block regular text-dark fs-4">Favour Ori</span></Link>
                                 </div>
                                 <div className="col-auto">
                                     <small className="text-muted">&copy; {new Date().getFullYear()} All rights reserved.</small>
