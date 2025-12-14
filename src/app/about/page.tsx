@@ -122,9 +122,9 @@ export default function About() {
       </div>
 
 
-      <div className="container-fluid border-top">
-        <div className="container px-1 px-lg-0 py-lg-5">
-          <div className="row gy-5">
+      <div className="container-fluid border-top py-5">
+        <div className="container px-1 px-lg-0">
+          <div className="row g-4 gy-lg-5">
             <div className="col-12 py-lg-3 d-none d-lg-block"></div>
             <div className="col-auto ms-auto">
               <h1 className="display-3 regular">Conferences & Engagements</h1>
