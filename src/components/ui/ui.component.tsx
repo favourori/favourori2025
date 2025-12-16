@@ -77,12 +77,31 @@ export function FeaturedWorkTwo({
     purpose = [],
     impact,
     fullInfo = false,
+    video = false
 }: FeaturedWorkProps) {
     return (
         <div className="card border rounded-5 mb-2 mb-lg-4 featured-work-card">
             <div className="card-body p-4 mb-lg-4">
                 <div className="position-relative overflow-hidden rounded-4 h-783">
-                    <img src={preview} alt={company} className="w-100 h-100" />
+                    {!video && (
+                        <img
+                            src={preview}
+                            alt={company}
+                            className="w-100 h-100 object-fit-cover"
+                        />
+                    )}
+
+                    {video && (
+                        <video
+                            src={preview}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            controls={false}
+                            className="w-100 h-100 object-fit-cover"
+                        />
+                    )}
                 </div>
             </div>
 
