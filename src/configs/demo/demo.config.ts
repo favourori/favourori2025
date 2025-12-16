@@ -43,7 +43,8 @@ const featuredWorks = [
         ],
         impact: "Security shifts fully left. Architects gain instant insight. Engineers fix issues before code is written. CISOs get risk clarity with zero friction.",
         caption: "ThreatLens is not just a tool—it's a new foundation for secure-by-design engineering.",
-        preview: "/assets/img/projects/tlens.png",
+        preview: "/assets/img/projects/tlens.mp4",
+        video: true,
     },
 ];
 
