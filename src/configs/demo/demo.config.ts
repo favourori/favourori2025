@@ -22,6 +22,7 @@ const featuredWorks = [
         impact: "PilotPatch doesn't just show vulnerabilities-it eliminates noise and highlights what truly matters. Teams ship faster, remediate smarter, and operate with clarity.",
         caption: "This is what vulnerability management should look like i n 2025.",
         preview: "/assets/img/projects/pilotpatch.gif",
+        video: true,
     },
     {
         start: "2025",
