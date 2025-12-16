@@ -22,6 +22,7 @@ export interface FeaturedWorkProps {
     impact: string;
     preview: string;
     fullInfo?: boolean;
+    video?: boolean;
 }
 
 export interface WorksProps {

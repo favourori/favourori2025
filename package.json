@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@strapi/client": "^1.6.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.8",
     "next": "16.0.7",
