@@ -11,8 +11,4 @@ export const GuestHeaderMenu = [
         name: "Projects",
         href: "/projects",
     },
-    {
-        name: "Blog",
-        href: "/blog",
-    }
 ];
