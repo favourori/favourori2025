@@ -46,6 +46,31 @@ const featuredWorks = [
         preview: "/assets/img/projects/tlens.mp4",
         video: true,
     },
+
+    {
+        start: "2025",
+        end: "Current",
+        company: "AuditViz",
+        role: "Dependency Vulnerability Scanner with Visual Intelligence",
+        description: `<p>This tool transforms how developers interact with security audit results by making vulnerability data immediately actionable and easy to understand. Instead of parsing through raw JSON or plain text output from npm audit, pip-audit, or bundler-audit, it automatically detects your package manager and presents findings through color-coded dashboards, severity bar charts, and detailed tables with direct CVE links.</p>
+
+<p class="mb-0">It intelligently normalizes output across different package managers (npm, yarn, pnpm, pip, bundler) into a unified format, making it easy to understand vulnerabilities regardless of your tech stack. By filtering by severity, highlighting direct vs transitive dependencies, and providing auto-fix command suggestions, it cuts through the noise to show what actually needs attention.</p>`,
+        skills: ["Vulnerability Scanning", "Multi-Language Security", "DevSecOps Tooling"],
+        problem: "Standard audit tools dump walls of text that developers scroll past. Critical vulnerabilities hide among low-priority noise, and teams lack visibility into security trends over time.",
+        purpose: [
+            "Auto-detects package managers (npm, yarn, pnpm, pip, bundler)",
+            "Visualizes severity distribution with color-coded bar charts",
+            "Filters by severity level to focus on critical/high issues",
+            "Tracks scan history to monitor improvements over time",
+            "Provides auto-fix commands for easy remediation",
+            "Integrates with CI/CD pipelines via proper exit codes",
+            "Provides one unified view for all dependency security across languages"
+        ],
+        impact: "AuditViz doesn't just list vulnerabilities—it visualizes risk and provides actionable fixes. Developers understand security faster, prioritize smarter, and ship with confidence.",
+        caption: "AuditViz is not just a scanner—it's a unified lens for understanding security risk across every language and package manager in your stack.",
+        preview: "/assets/img/projects/vuln-scanner.mp4",
+        video: true,
+    },
 ];
 
 const technicalDomains = [
